@@ -13,7 +13,563 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 	
-	
+<style type="text/css">
+
+html {
+  height: 100%;
+
+}
+
+
+body {
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #333;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body_container {
+  width: 100%;
+}
+
+.logo-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0px;
+    }
+    
+    
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  .logo-container {
+    left: 10px; /* Adjust as needed */
+    width: 70vw; /* Adjust as needed */
+    margin: -2vw auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 1;
+    font-size: 0vw; /* Adjust as needed */
+    padding-bottom: 0vw; /* Adjust as needed */
+    text-align: left;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+.logo-container img {
+      width: 70px;
+      height: auto;
+    }
+
+.footer {
+    font-size: 12px;
+  margin-bottom: auto;
+  margin-top: auto;
+  padding: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: #; /* Adjust background color as needed */
+}
+
+
+
+
+h1 {
+  width: 80%; /* Adjust as needed */
+  margin: 15vw auto;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.5;
+  font-size: 5vw; /* Adjust as needed */
+  padding: 10vw; /* Adjust as needed */
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
+
+
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  h1{
+      
+        /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    margin: 70vw auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 2vw;
+    font-size: 10vw; /* Adjust as needed */
+    padding: 0vw; /* Adjust as needed */
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+      
+      
+  }}
+      
+      
+      
+      
+      
+
+h1::before {
+  content: "";
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  top: -200px;
+  left: 10px;
+  transform: rotate(55deg);
+  background: rgba(255, 223, 0, 0.7);
+  background: -moz-linear-gradient(left, rgba(255, 223, 0, 0.7) 0%, rgba(42, 31, 25, 0) 65%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 223, 0, 0.7)), color-stop(65%, rgba(42, 31, 25, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 223, 0, 0.7) 0%, rgba(42, 31, 25, 0) 65%);
+  background: -o-linear-gradient(left, rgba(255, 223, 0, 0.7) 0%, rgba(42, 31, 25, 0) 65%);
+  background: -ms-linear-gradient(left, rgba(255, 223, 0, 0.7) 0%, rgba(42, 31, 25, 0) 65%);
+  background: linear-gradient(to right, rgba(255, 223, 0, 0.7) 0%, rgba(42, 31, 25, 0) 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdf00', endColorstr='#2a1f19', GradientType=0.7);
+}
+
+.text-left {
+  text-align: left;
+}
+#text3d {
+  color: rgba(255, 239, 0, 0.9);
+  letter-spacing: 0.10em;
+  text-shadow: 
+    -1px -1px 1px #fffce5, 
+    0px 1px 0 #4c4c4c, 
+    0px 2px 0 #494949, 
+    0px 3px 0 #464646, 
+    0px 4px 0 #434343, 
+    5px 5px 0px rgba(0, 0, 0, 0.1),
+    8px 5px 3px rgba(0, 0, 0, 0.2),
+    8px 5px 10px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  #h2{
+      /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    margin: 20vw auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 2vw;
+    font-size: 50vw; /* Adjust as needed */
+    padding: 0vw; /* Adjust as needed */
+    text-align: left;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+
+
+}
+#button ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1vw; /* Adjust as needed */
+  display: flex;
+  justify-content: flex-end;
+}
+
+#blur {
+  font-size: 2vw; /* Adjust as needed */
+  filter: blur(1vw); /* Adjust as needed */
+}
+
+
+
+
+}
+.row-social {
+    width: 100px;
+    margin: 10px;
+    bottom: 10px;
+  
+}
+
+#button li {
+  margin: 5px 5px;
+}
+
+
+
+#description-container {
+  font-size: 2vw;
+  position: relative;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+  max-width: 80%; /* Adjust as needed */
+  margin: 15vw auto;
+  line-height: 1;
+  padding: 1vw;
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  #description-container{
+     /* Adjust as needed */
+    width: 200%; /* Adjust as needed */
+    margin: 2vw auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    font-size: 4vw; /* Adjust as needed */
+     /* Adjust as needed */
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+#project-description {
+  font-size: 1.5vw; /* Adjust as needed */
+  position: relative;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+  max-width: 80%; /* Adjust as needed */
+  margin: 2vw auto; /* Adjust as needed */
+  line-height: 1.5;
+  padding: 5vw;
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1); /* Adjust as needed */
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  #project-description {
+    left: 10px; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    margin: 20vw auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+    font-size: 3.5vw; /* Adjust as needed */
+    padding: 0vw; /* Adjust as needed */
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+#project-description1 {
+  font-size: 1.5vw; /* Adjust as needed */
+  position: relative;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+  max-width: 80%; /* Adjust as needed */
+  line-height: 2;
+  margin: 15vw auto; /* Adjust as needed */
+  box-shadow: 0 0 2.5vw rgba(0, 0, 0, 0.1); /* Adjust as needed */
+  text-align: left;
+}
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  #project-description1 {
+ ; /* Adjust as needed */
+
+    width: 100%; /* Adjust as needed */
+    margin: 10vw auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+    font-size: 3.5vw; /* Adjust as needed */
+     padding-top: 3vw;
+    text-align: left;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+
+
+#pd_briefing {
+  font-size: 1.5vw; /* Adjust as needed */
+  position: relative;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+  max-width: 80%; /* Adjust as needed */
+  margin: 10vw auto; /* Adjust as needed */
+  line-height: 1.5;
+  padding-left: 1vw; /* Adjust as needed */
+  box-shadow: 0 0 2.5vw rgba(0, 0, 0, 0.1); /* Adjust as needed */
+  text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  #pd_briefing {
+    left: 10px; /* Adjust as needed */
+    width: 100%; /* Adjust as needed */
+    margin-top: 30vw auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
+    font-size: 3.5vw; /* Adjust as needed */
+    padding: 0vw; /* Adjust as needed */
+    text-align: left;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+
+
+.button {
+  background: radial-gradient(circle at 50% 120%, #f9f9f9, #f0f0f0);
+  position: relative;
+  border: 1px solid #ccc;
+  color: #333;
+  /* Adjust padding as needed */
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1vw; /* Adjust font size as needed */
+  outline: none;
+  cursor: pointer;
+  border-radius: 1px;
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.2); /* Adjust box shadow as needed */
+  margin-left: 5px; /* Adjust the spacing between buttons */
+}
+
+}
+
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+.invest-safely-text {
+  font-size: 1.5vw; /* Adjust as needed */
+  font-style: italic;
+  color: #333;
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto; /* Center the text */
+  text-align: center;
+}
+
+  
+* 
+
+{
+  box-sizing: border-box;
+}
+.buttons {
+  display: flex;
+  justify-content: right; /* Center the buttons horizontally */
+}
+
+* 
+
+{
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 30 auto;
+}
+@media screen and (max-width: 600px) {
+  .timeline {
+      position: relative;
+    
+    right: 2vw;
+
+  }
+}
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: 15px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  right: 310px;
+}
+@media screen and (max-width: 600px) {
+  .left {
+    right: 2vw;
+  }
+}
+
+/* Place the container to the right */
+.right {
+  left: 370px;
+}
+
+@media screen and (max-width: 600px) {
+  .right {
+    right: 2vw;
+  }
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    right: 15px;
+  }
+
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+
+
+
+
+
+#buttons {
+  position: absolute;
+  top: 35;
+  right: 0;
+  width: 100%;
+}
+#buttons ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+#buttons li {
+  margin: 0 5px;
+}
+button {
+  background-color: transparent; /* Transparent background */
+  border: none;
+top: 0;
+  color: black;
+padding: 5px 20px;
+  text-align: top;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  button {
+ /* Adjust as needed */
+    background-color:  #E5E4E2;
+    width: 100%; /* Adjust as needed */
+    margin: 20vw auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    font-size: 2.2vw; /* Adjust as needed */
+    padding: 0vw; /* Adjust as needed */
+    text-align: right;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+}
+button:active {
+  background-color: #gradient gold; 
+  box-shadow: none;
+}
+
+</style>	
 	<main>
 <div class="raised-button" id="buttons"><script>
 $(document).ready(function(){
