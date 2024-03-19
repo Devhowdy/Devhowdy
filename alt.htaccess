@@ -1,0 +1,6 @@
+LoadModule rewrite_module modules/mod_rewrite.so
+
+RewriteEngine On
+RewriteRule ^home$ /home.html [L]
+RewriteRule ^about$ /about.html [L]
+RewriteRule ^whitepaper$ /whitepaper.html [L]
