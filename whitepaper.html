@@ -5,6 +5,216 @@
 	<script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
 	<script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script><script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script>
 </head>
+	<style>
+	
+html {
+  height: 100%;
+
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+#copyright {
+ 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+  padding: ;
+}
+
+
+#buttons {
+  position: flex;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+#buttons ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+#buttons li {
+  margin: 0 5px;
+}
+
+button {
+
+  background-color: transparent; /* Transparent background */
+  border: none;
+top: 0;
+  color: black;
+padding: 5px 20px;
+  text-align: top;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+button:active {
+  background-color: #gradient gold; 
+  box-shadow: none;
+}
+
+h1 {
+  width: 100%;
+  margin: 100px auto;
+  font-family: 'Lato', sans-serif;
+  line-height: 80px;
+  font-size: 8.5rem;
+  padding: 550px 50px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  h1{
+      
+        /* Adjust as needed */
+    width: 150%; /* Adjust as needed */
+    margin: 10vw auto;
+    font-family: 'Lato', sans-serif;
+    line-height: .1vw;
+    font-size: 1vw; /* Adjust as needed */
+    left: 10px;
+    padding-left: 10vw; /* Adjust as needed */
+    text-align: left;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+      
+      
+  }}
+      
+      
+      
+      
+      
+
+h1::before {
+  content: "";
+  width: 50%;
+  height: 50px;
+  position: absolute;
+  top: -200px;
+  left: 10px;
+  transform: rotate(55deg);
+  background: rgba(255, 223, 0, 0.7);
+  background: -moz-linear-gradient(left, rgba(255, 223, 0, 0.7) 0%, rgba(42, 31, 25, 0) 65%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 223, 0, 0.7)), color-stop(65%, rgba(42, 31, 25, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 223, 0, 0.7) 0%, rgba(42, 31, 25, 0) 65%);
+  background: -o-linear-gradient(left, rgba(255, 223, 0, 0.7) 0%, rgba(42, 31, 25, 0) 65%);
+  background: -ms-linear-gradient(left, rgba(255, 223, 0, 0.7) 0%, rgba(42, 31, 25, 0) 65%);
+  background: linear-gradient(to right, rgba(255, 223, 0, 0.7) 0%, rgba(42, 31, 25, 0) 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdf00', endColorstr='#2a1f19', GradientType=0.7);
+}
+
+
+
+#text3d {
+  color: rgba(255, 239, 0, 0.9);
+  letter-spacing: 0.10em;
+  text-shadow: 
+    -1px -1px 1px #fffce5, 
+    0px 1px 0 #4c4c4c, 
+    0px 2px 0 #494949, 
+    0px 3px 0 #464646, 
+    0px 4px 0 #434343, 
+    5px 5px 0px rgba(0, 0, 0, 0.1),
+    8px 5px 3px rgba(0, 0, 0, 0.2),
+    8px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#buttons {
+  position: absolute;
+  top: 35;
+  right: 0;
+  width: 100%;
+}
+
+#buttons ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+#buttons li {
+  margin: 0 5px;
+}
+
+button {
+
+  background-color: transparent; /* Transparent background */
+  border: none;
+top: 0;
+  color: black;
+padding: 5px 20px;
+  text-align: top;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  outline: none;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+@media screen and (max-width: 600px) {
+  /* Place the timeline to the left */
+  button {
+ /* Adjust as needed */
+    background-color:  #E5E4E2;
+    width: 100%; /* Adjust as needed */
+    margin: 20vw auto;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    font-size: 2.2vw; /* Adjust as needed */
+    padding: 0vw; /* Adjust as needed */
+    text-align: right;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+button:active {
+  background-color: #gradient gold; 
+  box-shadow: none;
+}
+
+.footer {
+    font-size: 12px;
+  margin-bottom: auto;
+  margin-top: auto;
+  padding: 10px;
+  text-align: center;
+  padding: 10px;
+  background-color: #; /* Adjust background color as needed */
+}
+	</style>
 <body>
 
 <h1 id="text3d">Coming Soon</h1>
