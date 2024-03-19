@@ -1,0 +1,46 @@
+<?php
+header('Content-Type: application/json');
+
+$url = 'https://streaming.bitquery.io/graphql';
+$apiKey = 'YOUR_API_KEY';  // Replace with your actual API key
+$authorization = 'Bearer YOUR_ACCESS_TOKEN';  // Replace with your actual access token
+
+$query = <<<GRAPHQL
+{
+  EVM(dataset: archive, network: bsc) {
+    TokenHolders(
+      date: "2024-1-05"
+      tokenSmartContract: "0x0e2d3985a69eaeabaacf3845ad2d8f8fc7eb8312"
+    ) {
+      Holder {
+        Address
+      }
+      Balance {
+        Amount
+      }
+    }
+  }
+}
+GRAPHQL;
+
+$data = array('query' => $query, 'variables' => '{}');
+
+$options = array(
+    'http' => array(
+        'header' => "Content-type: application/json\r\n"
+                  . "X-API-KEY: $apiKey\r\n"
+                  . "Authorization: $authorization\r\n",
+        'method' => 'POST',
+        'content' => json_encode($data),
+    ),
+);
+
+$context = stream_context_create($options);
+$result = file_get_contents($url, false, $context);
+
+if ($result === FALSE) {
+    echo json_encode(array('error' => 'Error fetching data'));
+} else {
+    echo $result;
+}
+?>
